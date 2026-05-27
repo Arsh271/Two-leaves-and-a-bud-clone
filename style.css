@@ -1,0 +1,228 @@
+@font-face {
+    font-family: Reckless;
+    src: url(./Fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family:RobotoMono-Medium ;
+    src: url(./Fonts/RobotoMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoMono-Regular;
+    src: url(./Fonts/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(./Fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+main{
+    min-height: 100vh;
+    background-color: #FBF9EB;
+}
+
+main nav{
+    background-color: #FFFEFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3rem;
+    padding: 0.8rem;
+
+    border: 1.5px solid #111;
+    border-radius: 20px;
+
+    position: sticky;
+    top: 0;
+}
+
+.nav-part1{
+    
+    display: none;
+}
+
+.nav-part1 h3{
+    font-family: Reckless;
+}
+
+.nav-part3{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.links{
+    
+
+    display: none;
+
+}
+
+.links h3{
+
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+
+.section-1{
+    
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav i{
+    font-size: 25px;
+    
+    color: #111;
+
+    font-weight: 300;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-1 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+
+    /* align-items: center; */
+
+}
+
+.content h1{
+    text-align: center;
+    color:#FBF9EB;
+    font-weight: 300;
+
+    font-family: Reckless;
+
+    /* max-width: 40%; */
+    font-size: clamp(3rem,5vw,5rem);
+}
+
+.content p{
+    text-align: center;
+
+
+    font-family: RobotoMono-Regular;
+
+    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+    /* max-width: 40%; */
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #FBF9EB;
+    letter-spacing: -1px;
+
+   
+}
+
+.content button{
+    width: 13rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree ;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    align-self: center;
+}
+
+
+
+@media (min-width:1024px){
+
+    .section-1{
+
+        background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=720");
+        width: 100%;
+
+    }
+
+    .nav-part1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.nav-part-1{
+    display: none;
+}
+
+.content{
+    width: 100%;
+    text-align: left  !important;
+
+    align-items: start;
+}
+
+.content h1{
+    text-align: left;
+    max-width: 40%;
+    
+}
+
+.content p{
+    text-align: left;
+    max-width: 40%;
+}
+
+.content button{
+    align-self: flex-start;
+}
+
+    
+}
