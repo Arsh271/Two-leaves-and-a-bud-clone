@@ -490,7 +490,10 @@ nav i{
 }
 
 
-
+#section-3{
+    width: 100%;
+    min-height: 60vh;
+}
 
 #section-3 header{
     width: 100%;
@@ -509,6 +512,118 @@ nav i{
     font-weight: 400;
     margin-top: 7rem;
     font-size: 0.8rem;
+}
+
+#section-4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600");
+    position: relative;
+    padding: 10rem 2rem;
+    background-size: cover;
+    
+}
+
+#section-4>img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 2rem;
+    top: 0;
+    transform: translateY(-30%);
+}
+
+#section-4 button{
+    max-width: 15rem;
+    padding: 0.1rem 0.2rem;
+    font-size: clamp(2.5rem,4vw,3.5rem);
+    font-family: Midnight;
+    font-weight: 500;
+    background-color: #A2C9FC;
+    rotate: -2deg;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+
+}
+
+#section-4 .contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+#section-4 .contents h1{
+    color: white;
+    font-family: Midnight;
+    font-width: 800;
+    font-size: clamp(3rem,11vw,17rem);
+    line-height: 0.9;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+#section-4 .contents>p{
+    color: white;
+    font-family: Reckless;
+    text-align: center;
+    font-size: clamp(2rem,4vw,9rem);
+    font-width: 900;
+    line-height: 1.2;
+}
+
+#section-4 .features{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(5rem, 9vw, 15rem);
+}
+
+#section-4 .features .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    text-align: center;
+}
+
+
+
+#section-4 .features .feature>p{
+    color: white;
+    text-align: center;
+
+}
+
+#section-4 .contents .features .feature img{
+
+    width: 100px;
+    height: 100px;
+}
+
+#section-4 .contents .btm-btn{
+    border-radius: 2rem;
+    
+    
+    
+
+    margin-top: 5rem;
+    width: 15rem;
+    padding: 1rem 1.3rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree ;
+    font-size: 1.2rem;
+    font-weight: 500;
+    rotate: 0deg;
+
+    align-self: center;
 }
 
 
@@ -585,6 +700,15 @@ nav i{
 .search-box input{
     width: 25rem;
     height: 5rem;
+}
+
+#section-4{
+    padding: 13rem;
+}
+
+#section-4 img{
+    width: 150px;
+    height: 150px;
 }
     
 }
