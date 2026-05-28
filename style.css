@@ -204,7 +204,7 @@ nav i{
     font-weight: 300;
 }
 
-#section-2>button{
+#section-2 .btn-wrapper button{
     padding: 0.1rem 0.1rem;
     font-size: 2rem;
     font-family: Midnight;
@@ -396,6 +396,121 @@ nav i{
 
 }
 
+#section-3{
+    padding: 2rem;
+    width: 100%;
+    gap: 3rem;
+    overflow: auto;
+    
+}
+
+#section-3 .header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    padding: 0;
+}
+#section-3>button{
+    padding: 0.1rem 0.2rem;
+    font-size: 4rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #FF7F31;
+    rotate: -6deg;
+    margin-top: 3rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+
+}
+
+
+
+
+
+
+
+.search-box input{
+    width: 90%;
+    height: 5rem;
+
+    border: 1px solid #4a4a4a;
+    border-radius: 16px;
+
+    background: transparent;
+
+    padding-left: 20px;
+
+    font-size: 28px;
+    font-family: serif;
+
+    outline: none;
+}
+
+.search-box input::placeholder{
+    color: #9d9890;
+}
+
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0.3rem;
+
+    width: 85%;
+    margin-top: 30px;
+}
+
+.tags button{
+    padding: 0.5rem 1.5rem;
+
+    border: 1px solid #3d3d3d;
+    border-radius: 0.8rem;
+
+    background:  #a9ceff;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    color: #000;
+
+    transition: ease 0.3s;
+
+    font-family: Reckless;
+
+    white-space: nowrap;
+}
+
+.tags button:hover{
+    background: #72a6e9;
+}
+
+
+
+
+#section-3 header{
+    width: 100%;
+    margin-bottom: 9rem;
+}
+
+#section-3 h1{
+    font-family: Reckless;
+    font-weight: 300;
+    font-size: clamp(1.7rem,3vw,5rem);
+    
+}
+
+#section-3 p{
+    font-family: Figtree;
+    font-weight: 400;
+    margin-top: 7rem;
+    font-size: 0.8rem;
+}
+
 
 @media (min-width:1024px){
 
@@ -451,5 +566,25 @@ nav i{
     margin-top: 4rem;
 }
 
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#section-3{
+    padding: 5rem 15rem;
+}
+
+#section-3 .tags{
+    max-width: 80%;
+}
+
+.search-box input{
+    width: 25rem;
+    height: 5rem;
+}
     
 }
